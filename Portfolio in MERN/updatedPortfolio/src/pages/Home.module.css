@@ -1,0 +1,94 @@
+.mainContainer {
+    color: white;
+    width: 100%;
+    height: 86vh;
+}
+
+.innerContainer {
+    display: flex;
+    height: 86vh;
+    width: 100%;
+}
+
+.leftSide {
+    padding: 8% 2%;
+    width: 35vw;
+    height: 100%;
+}
+
+.leftSide img {
+    filter: drop-shadow(0px 5px 5px rgb(220, 144, 2));
+    margin: -70px 0px 0px 30px;
+    width: 95%;
+    animation: upDown 3s ease-in-out infinite;
+}
+
+@keyframes upDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.rightSide {
+    padding: 8% 2%;
+    height: 100%;
+    width: 65vw;
+}
+
+.rightSide p {
+    font-size: 60px;
+}
+
+.rightSide p1 {
+    font-size: 45px;
+    color: rgb(220, 144, 2);
+}
+
+.rightSide p2 {
+    font-size: 40px;
+}
+
+.rightSide p2 span {
+    color: rgba(0, 255, 0, 0.721);
+}
+
+.rightSide p3 {
+    font-size: 30px;
+}
+
+.btnLinks {
+    display: flex;
+}
+
+.btnLinks button {
+    padding: 8px 20px;
+    font-size: 18px;
+    color: white;
+    border: 2px solid rgb(220, 144, 2);
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.btnLinks button:hover {
+    background-color: rgb(220, 144, 2);
+    transition: 0.3s;
+}
+
+.btnLinks .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 25px;
+}
+
+.links .link {
+    cursor: pointer;
+    margin: 0px 6px;
+    font-size: 23px;
+}

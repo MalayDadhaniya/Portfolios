@@ -1,0 +1,30 @@
+.mainContainer {
+    padding: 60px 0px;
+    color: white;
+    width: 100%;
+    height: 84vh;
+}
+
+.aboutTitle {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutTitle span {
+    color: rgb(220, 144, 2);
+}
+
+.innerContainer {
+    padding: 60px 120px;
+    width: 100%;
+}
+
+.innerContainer p {
+    font-size: 28px;
+}
+
+.innerContainer p span {
+    color: rgb(220, 144, 2);
+    font-size: 34px;
+}

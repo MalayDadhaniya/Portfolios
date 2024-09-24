@@ -1,0 +1,44 @@
+.mainContaner {
+    width: 100%;
+    padding: 40px 50px 40px 80px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.webLogo {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(220, 144, 2);
+}
+
+.innerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerContainer ul {
+    display: flex;
+    list-style: none;
+}
+
+.innerContainer ul li {
+    font-size: 18px;
+    margin: 0px 20px;
+}
+
+
+.innerContainer ul li a {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.innerContainer ul li a:hover {
+    background-color: rgb(220, 144, 2);
+    border-radius: 8px;
+}
