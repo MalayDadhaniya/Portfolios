@@ -2,24 +2,27 @@
     color: white;
     width: 100%;
     height: 86vh;
+    display: flex;
+    align-items: center;
 }
 
 .innerContainer {
     display: flex;
-    height: 86vh;
+    height: 100%;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .leftSide {
     padding: 8% 2%;
-    width: 35vw;
+    width: 32vw;
     height: 100%;
 }
 
 .leftSide img {
     filter: drop-shadow(0px 5px 5px rgb(220, 144, 2));
-    margin: -70px 0px 0px 30px;
-    width: 95%;
+    margin: 40px 0px 0px 40px;
+    width: 80%;
     animation: upDown 3s ease-in-out infinite;
 }
 
@@ -39,6 +42,7 @@
     padding: 8% 2%;
     height: 100%;
     width: 65vw;
+    /* Adjust width as needed */
 }
 
 .rightSide p {
@@ -64,6 +68,8 @@
 
 .btnLinks {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .btnLinks button {
@@ -91,4 +97,79 @@
     cursor: pointer;
     margin: 0px 6px;
     font-size: 23px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .innerContainer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .leftSide,
+    .rightSide {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .rightSide p {
+        font-size: 50px;
+    }
+
+    .rightSide p1 {
+        font-size: 35px;
+    }
+
+    .rightSide p2 {
+        font-size: 30px;
+    }
+
+    .rightSide p3 {
+        font-size: 26px;
+    }
+
+    .btnLinks button {
+        font-size: 16px;
+    }
+
+    .links .link {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rightSide p {
+        font-size: 40px;
+    }
+
+    .rightSide p1 {
+        font-size: 30px;
+    }
+
+    .rightSide p2 {
+        font-size: 28px;
+    }
+
+    .rightSide p3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rightSide p {
+        font-size: 30px;
+    }
+
+    .rightSide p1 {
+        font-size: 28px;
+    }
+
+    .rightSide p2 {
+        font-size: 20px;
+    }
+
+    .rightSide p3 {
+        font-size: 20px;
+    }
 }

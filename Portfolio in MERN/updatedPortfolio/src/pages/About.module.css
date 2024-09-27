@@ -1,12 +1,22 @@
 .mainContainer {
-    padding: 60px 0px;
+    margin: 80px 0px -80px 0px;
     color: white;
     width: 100%;
-    height: 84vh;
+    height: 100vh;
+    /* Change to 100vh for full height */
+    display: flex;
+    /* Add flex for vertical centering */
+    flex-direction: column;
+    /* Arrange items in a column */
+    justify-content: center;
+    /* Center items vertically */
+    align-items: center;
+    /* Center items horizontally */
 }
 
 .aboutTitle {
-    font-size: 50px;
+    padding: 20px 0px;
+    font-size: 48px;
     display: flex;
     justify-content: center;
 }
@@ -16,15 +26,53 @@
 }
 
 .innerContainer {
-    padding: 60px 120px;
+    padding: 40px 100px;
     width: 100%;
 }
 
 .innerContainer p {
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .innerContainer p span {
     color: rgb(220, 144, 2);
-    font-size: 34px;
+    font-size: 32px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .aboutTitle {
+        font-size: 38px;
+    }
+
+    .innerContainer {
+        padding: 20px 40px;
+    }
+
+    .innerContainer p {
+        font-size: 22px;
+    }
+
+    .innerContainer p span {
+        font-size: 24px;
+    }
+
+    .mainContainer {
+        height: 100vh;
+        /* Ensure full height on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutTitle {
+        font-size: 28px;
+    }
+
+    .innerContainer p {
+        font-size: 20px;
+    }
+
+    .innerContainer p span {
+        font-size: 22px;
+    }
 }

@@ -5,7 +5,7 @@ import bgVideo from "../imagesVideos/bg-video.mp4";
 const VideoBackground = () => {
   return (
     <div className={style.videoContainer}>
-      <video autoPlay muted loop id={style.bgVideo}>
+      <video autoPlay muted loop className={style.bgVideo}>
         <source src={bgVideo} type="video/mp4" />
       </video>
     </div>

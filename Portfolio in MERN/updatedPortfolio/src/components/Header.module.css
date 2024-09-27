@@ -1,12 +1,16 @@
-.mainContaner {
+.mainContainer {
+    z-index: 999;
     width: 100%;
-    padding: 40px 50px 40px 80px;
+    padding: 20px 20px;
+    /* Reduced padding for better fit */
     background-color: transparent;
     color: #fff;
+    position: relative;
 }
 
 .webLogo {
-    font-size: 32px;
+    font-size: 28px;
+    /* Adjusted font size for smaller screens */
     font-weight: bold;
     color: rgb(220, 144, 2);
 }
@@ -15,23 +19,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .innerContainer ul {
     display: flex;
     list-style: none;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .innerContainer ul li {
-    font-size: 18px;
-    margin: 0px 20px;
+    font-size: 16px;
+    margin: 0px 15px;
+    /* Adjusted margin */
 }
-
 
 .innerContainer ul li a {
     font-weight: 600;
-    font-size: 20px;
-    padding: 6px 12px;
+    font-size: 18px;
+    padding: 6px 10px;
+    /* Reduced padding */
     border-radius: 8px;
     text-decoration: none;
     color: white;
@@ -41,4 +48,53 @@
 .innerContainer ul li a:hover {
     background-color: rgb(220, 144, 2);
     border-radius: 8px;
+}
+
+.menuIcon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menuLine {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .innerContainer ul {
+        margin: 10px 0px;
+        flex-direction: column;
+        position: absolute;
+        top: 120%;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Reduced opacity for better readability */
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    .innerContainer ul li {
+        margin: 10px 0;
+        /* Reduced margin */
+        text-align: center;
+    }
+
+    .innerContainer ul li a {
+        padding: 10px;
+    }
+
+    .menuIcon {
+        display: flex;
+    }
+
+    .navLinks.active {
+        max-height: 400px;
+    }
 }

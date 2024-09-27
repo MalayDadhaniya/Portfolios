@@ -1,37 +1,49 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import style from "./Header.module.css";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <div className={style.mainContaner}>
+    <div className={style.mainContainer}>
       <div className={style.innerContainer}>
         <div className={style.webLogo}>MyFolio</div>
-        <ul>
-          <li>
-            <Link to="/">
-              <a className="active">Home</a>
-            </Link>
+        <div className={style.menuIcon} onClick={toggleMenu}>
+          <div className={style.menuLine}></div>
+          <div className={style.menuLine}></div>
+          <div className={style.menuLine}></div>
+        </div>
+        <ul className={`${style.navLinks} ${isMenuOpen ? style.active : ""}`}>
+          <li onClick={closeMenu}>
+            <a href="#home" className="active">
+              Home
+            </a>
           </li>
-          <li>
-            <Link to="/about">
-              <a>About</a>
-            </Link>
+          <li onClick={closeMenu}>
+            <a href="#about">About</a>
           </li>
-          <li>
-            <a href="#">Skill</a>
+          <li onClick={closeMenu}>
+            <a href="#skills">Skill</a>
           </li>
-          <li>
-            <a href="#">Expreance</a>
+          <li onClick={closeMenu}>
+            <a href="#experience">Experience</a>
           </li>
-          <li>
-            <a href="#">Projects</a>
+          <li onClick={closeMenu}>
+            <a href="#projects">Projects</a>
           </li>
-          <li>
-            <a href="#">Contact</a>
+          <li onClick={closeMenu}>
+            <a href="#contact">Contact</a>
           </li>
-          <li>
-            <a href="#">Login</a>
+          <li onClick={closeMenu}>
+            <a href="#login">Login</a>
           </li>
         </ul>
       </div>

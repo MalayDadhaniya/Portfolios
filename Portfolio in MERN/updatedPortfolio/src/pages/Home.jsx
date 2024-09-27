@@ -25,7 +25,7 @@ const Home = () => {
           <br />
           <br />
           <p3>
-            I’m creative web developer based in India, and I'm very passionate
+            I’m a creative web developer based in India, and I'm very passionate
             and dedicated to my work.
           </p3>
           <br />
