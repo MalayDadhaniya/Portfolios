@@ -1,0 +1,25 @@
+.mainContainer {
+    width: 20%;
+    float: right;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background-color: #000;
+    padding: 10px;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.icon:hover {
+    font-size: 33px;
+    transition: 0.5s;
+    color: #fff;
+}
